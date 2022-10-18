@@ -6,6 +6,7 @@
 '''
 
 ls = [2, 3, 4, 5, 6, 3, 5, 2, 0, 5]
+print("Стартовый массив: ", ls)
 resLs = []
 def doubleExp (arr):
     global resLs
@@ -18,6 +19,6 @@ def doubleExp (arr):
 
 def init():
     doubleExp(ls)
-    print (resLs)
+    print ("Список результатов: ", resLs)
 
 init()

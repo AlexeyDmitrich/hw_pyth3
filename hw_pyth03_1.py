@@ -6,16 +6,18 @@
 '''
 
 ls = [2, 3, 5, 9, 3, 1, 2, 1, 3, 1, 2, 1]
-
-def blackIndex (arr):
-    counter = 0
-    for i in range(len(arr)):
-        if (i % 2 != 0):
-            counter += arr[i]
-    return counter
-
+try:
+    def blackIndex (arr):
+        counter = 0
+        for i in range(len(arr)):
+            if (i % 2 != 0):
+                counter += arr[i]
+        return counter
+except:
+    print("Произошла ошибка")
 def init ():
     val = blackIndex(ls)
-    print (val)
+    print("установленный массив: ", ls)
+    print ("сумма нечетных элементов: ", val)
 
 init()
